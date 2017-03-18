@@ -54,9 +54,11 @@ That seems alright, we can track each goat and we can click it to see more info 
 1. How would you serve the HTML for this site in Express?
 
   <details><summary>click for idea</summary>
-    Since there are two different views with different HTML structures, the most straightforward way is to create two HTML files and two routes:
-    -  a `GET /` route to send the home page's HTML file, and
+    
+Since there are two different views with different HTML structures, the most straightforward way is to create two HTML files and two routes:  
+    -  a `GET /` route to send the home page's HTML file, and  
     - a `GET /goats/:goatId` route to send an HTML file that could be filled in with Handlebars for each individual goat.
+     
   </details>
 
   > Note: This approach results in every page having its own URL, but their are many page reloads as the user navigates the site. Since HTML files are sent over mostly complete, it's easy for search engines to crawl their content.
@@ -311,7 +313,7 @@ What if you want to link to another view from one of your partials?  Maybe you'd
 	</div>
 	```
 
-###Closing Thoughts
+### Closing Thoughts
 
 * How is client-side routing different from server-side routing (for HTML endpoints)?
 
